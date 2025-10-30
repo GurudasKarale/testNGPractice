@@ -11,7 +11,7 @@ stages{
 
   stage('Test'){
     steps{
-      bat 'cloned'
+      echo "cloned"
     }
   }
   
