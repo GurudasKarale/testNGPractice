@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.001 s <<< FAILURE! -- in runners.TestRunner
+Google Search.Search for Selenium -- Time elapsed: 3.611 s <<< FAILURE!
+java.lang.AssertionError: No results found!
+	at steps.GoogleSteps.shouldSeeResults(GoogleSteps.java:32)
+	at ✽.I should see results(classpath:features/GoogleSearch.feature:11)
+
+Google Search.Search for Cucumber -- Time elapsed: 3.731 s <<< FAILURE!
+java.lang.AssertionError: No results found!
+	at steps.GoogleSteps.shouldSeeResults(GoogleSteps.java:32)
+	at ✽.I should see results(classpath:features/GoogleSearch.feature:6)
+
