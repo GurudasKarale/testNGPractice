@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     environment {
-        // Name of the Maven settings file if you use custom repo config (optional)
+        
         MAVEN_OPTS = "-Dmaven.test.failure.ignore=false"
-        // Email to notify
-        TEAM_EMAIL = "team@example.com"
+       
+        TEAM_EMAIL = "karalegurudas@gmail.com"
     }
 
     stages {
@@ -54,7 +54,7 @@ pipeline {
             mail to: "${TEAM_EMAIL}",
                  subject: "✅ SUCCESS: Build #${BUILD_NUMBER} for ${JOB_NAME}",
                  body: """\
-Good news 🎉
+Hello All,
 
 The Jenkins build **#${BUILD_NUMBER}** completed successfully.
 
@@ -62,7 +62,7 @@ The Jenkins build **#${BUILD_NUMBER}** completed successfully.
 📁 Reports: Check 'target/cucumber-reports' in Jenkins artifacts.
 
 Regards,  
-Jenkins CI
+Jenkins
 """
         }
 
